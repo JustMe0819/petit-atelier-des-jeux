@@ -11,7 +11,7 @@ import { BOUTIQUE, aCompleter } from '../lib/boutique';
 import { useTitre } from '../lib/useTitre';
 
 export function APropos() {
-  useTitre('À propos', 'Le Petit Atelier des Jeux conçoit des jeux à imprimer pour les 6-8 ans.');
+  useTitre('À propos', 'Thylia, créatrice du Petit Atelier des Jeux, conçoit des jeux à imprimer pour les 6-8 ans.');
   return (
     <>
       <section className="conteneur grid grid-cols-12 items-center gap-gutter py-space-xl">
@@ -23,9 +23,26 @@ export function APropos() {
           <p className="max-w-2xl font-texte text-body-md leading-relaxed text-on-surface-variant md:text-body-lg">
             Le <strong className="text-on-surface">Petit Atelier des Jeux</strong> propose des jeux et des cahiers d’activités à imprimer pour les enfants de 6 à 8 ans : labyrinthes, logique, nonogrammes, observation. L’idée est simple : des moments calmes, une consigne claire, et la fierté de trouver par soi-même.
           </p>
-          <div className="rounded-2xl border-2 border-dashed border-rose bg-rose-soft p-space-md font-texte text-body-sm text-on-rose">
-            <strong>À compléter par la créatrice ou le créateur :</strong> présentez-vous en quelques lignes (qui vous êtes, pourquoi vous avez créé la boutique). Ce texte est dans <code>src/client/pages/Infos.tsx</code>.
-          </div>
+          <figure className="rounded-2xl bg-surface-container-lowest p-space-md shadow-doux md:p-space-lg">
+            <div className="space-y-space-sm font-texte text-body-md leading-relaxed text-on-surface-variant">
+              <p>
+                Bonjour, je m’appelle <strong className="text-on-surface">Thylia</strong> ! Depuis toute petite, je dessine, je découpe et j’invente des jeux sur papier. Le Petit Atelier des Jeux, c’est ma façon de partager cette passion avec les enfants d’aujourd’hui.
+              </p>
+              <p>
+                J’ai créé cette boutique pour proposer une vraie alternative aux écrans : des activités qui occupent les enfants pour de bon et qui leur apprennent plein de choses en jouant. Observer, réfléchir, compter, persévérer… et être fier d’avoir trouvé tout seul.
+              </p>
+              <p>
+                Chaque cahier est pensé pour être joli, clair et facile à imprimer à la maison. Bonne impression, et surtout bon jeu !
+              </p>
+            </div>
+            <figcaption className="mt-space-md flex items-center gap-space-sm">
+              <img src="/images/decor/renard-logo.webp" alt="" className="h-12 w-12 rounded-full bg-surface-container-low object-contain p-1" />
+              <span>
+                <span className="block font-titre text-title-md text-primary">Thylia</span>
+                <span className="font-texte text-caption text-on-surface-variant">Créatrice du Petit Atelier des Jeux</span>
+              </span>
+            </figcaption>
+          </figure>
         </div>
         <div className="relative col-span-12 lg:col-span-5">
           <div className="relative mx-auto grid max-w-md grid-cols-2 gap-4 rounded-[2rem] bg-surface-container-high p-6 shadow-carte">
@@ -45,12 +62,12 @@ export function APropos() {
 
       <section className="bg-surface-container-low py-space-xl">
         <div className="conteneur">
-          <EnTeteSection surtitre="Transparence" titre="Comment nos jeux sont fabriqués" texte="Nous préférons vous expliquer simplement notre méthode plutôt que d’enjoliver." />
+          <EnTeteSection surtitre="Transparence" titre="Comment mes jeux sont fabriqués" texte="Je préfère vous expliquer simplement ma méthode plutôt que d’enjoliver." />
           <div className="grid grid-cols-1 gap-gutter md:grid-cols-3">
             {[
               { i: 'code', f: 'bg-secondary-container text-on-secondary-container', t: '1. Des programmes génèrent les jeux', x: 'Les labyrinthes, grilles et suites logiques sont créés par des programmes à partir de règles précises. Cela permet de proposer beaucoup de jeux variés, avec une difficulté maîtrisée.', b: 'Aucun jeu n’est inventé « au hasard »' },
               { i: 'rule', f: 'bg-primary-container text-on-primary-container', t: '2. Chaque solution est vérifiée', x: 'Un programme contrôle chaque jeu : le labyrinthe a bien un chemin, le nonogramme une seule solution, la suite une seule bonne réponse. Le PDF est aussi vérifié (format A4, marges, pages vides).', b: 'Contrôles automatiques à chaque fabrication' },
-              { i: 'visibility', f: 'bg-tertiary-container text-on-tertiary-container', t: '3. Un humain relit avant la vente', x: 'Un produit n’est mis en vente qu’après une relecture complète du PDF par une personne. Tant que ce n’est pas fait, il reste affiché « Bientôt disponible ».', b: 'Pas de mise en vente automatique' },
+              { i: 'visibility', f: 'bg-tertiary-container text-on-tertiary-container', t: '3. Je relis tout avant la vente', x: 'Un cahier n’est mis en vente qu’après que je l’ai relu entièrement, page par page. Tant que ce n’est pas fait, il reste affiché « Bientôt disponible ».', b: 'Pas de mise en vente automatique' },
             ].map((p) => (
               <div key={p.t} className="flex flex-col justify-between overflow-hidden rounded-2xl bg-surface-container-lowest shadow-doux">
                 <div className="p-space-lg">
@@ -63,7 +80,7 @@ export function APropos() {
             ))}
           </div>
           <p className="mt-space-md font-texte text-body-sm text-on-surface-variant">
-            Des outils d’intelligence artificielle peuvent nous aider à imaginer des thèmes ou à rédiger des consignes adaptées aux enfants. Ils ne servent jamais à valider une solution : ce rôle revient aux programmes de vérification et à la relecture humaine.
+            Des outils d’intelligence artificielle m’aident à imaginer des thèmes, à formuler certaines consignes et à créer les illustrations des couvertures. Ils ne servent jamais à valider une solution : ce rôle revient aux programmes de vérification et à ma relecture.
           </p>
         </div>
       </section>
@@ -73,7 +90,7 @@ export function APropos() {
           {[
             ['schedule', 'text-primary', 'Accès rapide', 'Fichiers disponibles dès la confirmation du paiement'],
             ['forest', 'text-secondary', 'Impression raisonnée', 'Pages aérées, en noir et blanc'],
-            ['mail', 'text-tertiary', 'Une question ?', 'Écrivez-nous via la page Contact'],
+            ['mail', 'text-tertiary', 'Une question ?', 'Écrivez-moi via la page Contact'],
           ].map(([i, c, t, x]) => (
             <div key={t} className="flex items-center gap-3">
               <Icone nom={i} className={`text-[28px] ${c}`} />
@@ -117,7 +134,7 @@ export function Faq() {
       <div className="mt-space-xl grid grid-cols-1 gap-gutter md:grid-cols-2">
         <Link to="/contact" className="flex items-start gap-space-sm rounded-2xl bg-surface-container-lowest p-space-md shadow-doux hover:shadow-carte">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary-container text-on-primary-container"><Icone nom="mail" /></span>
-          <div><p className="font-titre text-title-md">Nous écrire</p><p className="font-texte text-body-sm text-on-surface-variant">Une question sur un jeu ou une commande ? Utilisez le formulaire de contact.</p></div>
+          <div><p className="font-titre text-title-md">M’écrire</p><p className="font-texte text-body-sm text-on-surface-variant">Une question sur un jeu ou une commande ? Utilisez le formulaire de contact.</p></div>
         </Link>
         <Link to="/mes-telechargements" className="flex items-start gap-space-sm rounded-2xl bg-surface-container-lowest p-space-md shadow-doux hover:shadow-carte">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-secondary-container text-on-secondary-container"><Icone nom="download" /></span>
@@ -138,7 +155,7 @@ export function Contact() {
     setEnvoi(true);
     try {
       await api('/api/contact', { method: 'POST', json: d });
-      setEtat({ ok: true, texte: 'Merci ! Votre message a bien été envoyé. Nous vous répondrons par e-mail.' });
+      setEtat({ ok: true, texte: 'Merci ! Votre message a bien été envoyé. Je vous répondrai par e-mail.' });
       (e.target as HTMLFormElement).reset();
     } catch (err) {
       setEtat({ ok: false, texte: (err as Error).message });
@@ -151,8 +168,8 @@ export function Contact() {
       <div className="grid grid-cols-12 gap-gutter rounded-3xl bg-surface-container-low p-space-md md:p-space-xl">
         <div className="col-span-12 flex flex-col gap-space-md lg:col-span-5">
           <span className="pastille w-fit bg-secondary-container text-on-secondary-container"><Icone nom="support_agent" className="text-[18px]" /> Contact</span>
-          <h1 className="font-titre text-headline-lg-mobile text-marine md:text-headline-lg">Une question ?<br />Écrivez-nous.</h1>
-          <p className="font-texte text-body-md text-on-surface-variant">L’assistant ci-dessous répond tout de suite aux questions fréquentes. Pour un fichier qui ne s’ouvre pas ou une question sur une commande, écrivez-nous : nous lisons tous les messages.</p>
+          <h1 className="font-titre text-headline-lg-mobile text-marine md:text-headline-lg">Une question ?<br />Écrivez-moi.</h1>
+          <p className="font-texte text-body-md text-on-surface-variant">L’assistant ci-dessous répond tout de suite aux questions fréquentes. Pour un fichier qui ne s’ouvre pas ou une question sur une commande, écrivez-moi : je lis tous les messages.</p>
           <AssistantFaq idFormulaire="formulaire-contact" />
           <div className="flex items-start gap-space-sm rounded-2xl bg-surface-container-lowest p-space-md shadow-doux">
             <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary-container text-on-primary-container"><Icone nom="mail" /></span>
@@ -215,7 +232,7 @@ export function TelechargementImpossible() {
     lien_expire: ['Ce lien de téléchargement a expiré', 'Pour protéger vos fichiers, chaque bouton de téléchargement fonctionne pendant une durée limitée. Recevez de nouveaux liens par e-mail ci-dessous.'],
     lien_invalide: ['Ce lien n’est pas valide', 'Le lien est incomplet ou a été modifié. Utilisez le bouton reçu par e-mail ou demandez de nouveaux liens.'],
     non_payee: ['Commande non réglée', 'Les fichiers ne sont disponibles qu’après la confirmation du paiement.'],
-    introuvable: ['Fichier introuvable', 'Ce fichier ne fait pas partie de la commande. Si vous pensez qu’il s’agit d’une erreur, contactez-nous.'],
+    introuvable: ['Fichier introuvable', 'Ce fichier ne fait pas partie de la commande. Si vous pensez qu’il s’agit d’une erreur, contactez-moi.'],
     trop_de_requetes: ['Trop de téléchargements', 'Merci de patienter quelques minutes avant de réessayer.'],
   };
   const [titre, texte] = textes[raison] ?? ['Téléchargement impossible', 'Une erreur est survenue. Réessayez ou demandez de nouveaux liens.'];
