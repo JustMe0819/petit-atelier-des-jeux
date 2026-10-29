@@ -8,6 +8,8 @@ Légende : ✅ opérationnel et testé · 🔌 prêt, mais à brancher sur un se
 - **29/10/2026** : **Mission espace, Mission pirates et Mission magie générées** (46 pages chacune, 36 étapes d'histoire, 46 jeux vérifiés, version économie d'encre, QA OK). Statut `en_verification` : relecture humaine puis publication à faire. Couvertures du site encore provisoires.
 - **29/10/2026** : site adapté à **Vercel + Turso** (base de commandes en ligne), e-mails via le Gmail dédié, **newsletter retirée**, **assistant FAQ** (sans IA) sur la page Contact, pages légales mises à jour (entrepreneur individuel, hébergeur Vercel, illustrations IA).
 
+- **29/10/2026** : couvertures finales des 3 Missions (générées avec ChatGPT). Histoires réécrites : Mission espace = Filou le renard astronaute + Bip le robot ; Mission magie = Lila la princesse + Flamme le dragon. Les 8 produits et le coffret sont publiés (relus par Thylia Brouillard) ; espace et magie à relire après réécriture.
+
 ## Décisions de mise en ligne
 
 - Hébergement : Vercel via un dépôt GitHub **privé** (les PDF payants sont dans le dépôt). Adresse : `petit-atelier-des-jeux.vercel.app`.
