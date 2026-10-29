@@ -62,7 +62,7 @@ def test_coloriages_codes(dessin):
 
 def test_code_secret_et_chemin_des_nombres():
     rng = random.Random(5)
-    for msg in ("NID", "VOLCAN", "BRAVO PICO", "BRAVO BIP", "BRAVO COCO", "BRAVO FLAMME"):
+    for msg in ("NID", "VOLCAN", "BRAVO PICO", "BRAVO FILOU", "BRAVO COCO", "BRAVO LILA"):
         c = ge.generer_code(rng, msg, "t")
         assert ge.verifier_code(c) == [] and ge.decoder(c) == msg
     for pas in (1, 2, 5, 10):

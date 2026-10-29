@@ -432,6 +432,62 @@ def grimoire(c, cx, cy, s, t):
         c.circle(cx + dx * s, cy + dy * s, s * 0.03, stroke=1, fill=1)
 
 
+# =============================================================== héros des cahiers-aventures
+def astronaute(c, cx, cy, s, t):
+    """Filou, le petit renard astronaute (tête de renard dans un casque)."""
+    from generation.pdf_builder.pictos import renard
+    _style(c, t, s, "orange")  # col de la combinaison
+    c.roundRect(cx - s * 0.3, cy - s * 0.48, s * 0.6, s * 0.16, s * 0.06, stroke=1, fill=1)
+    _style(c, t, s, "gris")  # casque
+    c.circle(cx, cy + s * 0.04, s * 0.42, stroke=1, fill=1)
+    _style(c, t, s, "bleu")  # vitre
+    c.circle(cx, cy + s * 0.04, s * 0.34, stroke=1, fill=1)
+    c.saveState()
+    renard(c, cx, cy + s * 0.02, s * 0.6, t)
+    c.restoreState()
+    _style(c, t, s, "gris")
+    c.line(cx + s * 0.28, cy + s * 0.3, cx + s * 0.36, cy + s * 0.44)
+    _style(c, t, s, "orange")
+    c.circle(cx + s * 0.36, cy + s * 0.45, s * 0.035, stroke=1, fill=1)
+
+
+def princesse(c, cx, cy, s, t):
+    """Lila, la petite princesse."""
+    _style(c, t, s, "marron")  # cheveux (arrière)
+    p = lisse(c, _pts(cx, cy, s, [(0.0, 0.36), (0.26, 0.24), (0.3, -0.05), (0.26, -0.3), (0.12, -0.22),
+                                  (0.0, -0.1), (-0.12, -0.22), (-0.26, -0.3), (-0.3, -0.05), (-0.26, 0.24)]))
+    c.drawPath(p, stroke=1, fill=1)
+    _style(c, t, s, "violet")  # robe
+    p = c.beginPath()
+    p.moveTo(cx - s * 0.16, cy - s * 0.2)
+    p.lineTo(cx + s * 0.16, cy - s * 0.2)
+    p.curveTo(cx + s * 0.3, cy - s * 0.3, cx + s * 0.38, cy - s * 0.4, cx + s * 0.4, cy - s * 0.48)
+    p.lineTo(cx - s * 0.4, cy - s * 0.48)
+    p.curveTo(cx - s * 0.38, cy - s * 0.4, cx - s * 0.3, cy - s * 0.3, cx - s * 0.16, cy - s * 0.2)
+    p.close()
+    c.drawPath(p, stroke=1, fill=1)
+    _style(c, t, s, "beige")  # visage
+    c.circle(cx, cy + s * 0.04, s * 0.2, stroke=1, fill=1)
+    _style(c, t, s, "marron")  # frange
+    p = c.beginPath()
+    p.moveTo(cx - s * 0.2, cy + s * 0.08)
+    p.curveTo(cx - s * 0.2, cy + s * 0.3, cx + s * 0.2, cy + s * 0.3, cx + s * 0.2, cy + s * 0.08)
+    p.curveTo(cx + s * 0.1, cy + s * 0.14, cx - s * 0.02, cy + s * 0.16, cx - s * 0.08, cy + s * 0.2)
+    p.curveTo(cx - s * 0.12, cy + s * 0.12, cx - s * 0.16, cy + s * 0.1, cx - s * 0.2, cy + s * 0.08)
+    p.close()
+    c.drawPath(p, stroke=1, fill=1)
+    _style(c, t, s, "jaune")  # couronne
+    _poly(c, _pts(cx, cy, s, [(-0.13, 0.25), (-0.15, 0.42), (-0.07, 0.33), (0.0, 0.46), (0.07, 0.33),
+                              (0.15, 0.42), (0.13, 0.25)]))
+    _oeil(c, cx - s * 0.075, cy + s * 0.04, s * 0.03)
+    _oeil(c, cx + s * 0.075, cy + s * 0.04, s * 0.03)
+    _style(c, t, s, "rose")
+    for sx in (-1, 1):
+        c.circle(cx + sx * s * 0.12, cy - s * 0.03, s * 0.03, stroke=0, fill=1)
+    _style(c, t, s, None)
+    c.arc(cx - s * 0.06, cy - s * 0.1, cx + s * 0.06, cy, 200, 140)
+
+
 PICTOS_MISSIONS = {
     "fusee": fusee, "planete": planete, "lune": lune, "comete": comete, "soucoupe": soucoupe,
     "alien": alien, "robot": robot,
@@ -439,4 +495,5 @@ PICTOS_MISSIONS = {
     "palmier": palmier, "crabe": crabe, "carte": carte,
     "dragon": dragon, "baguette": baguette, "chapeau": chapeau, "chateau": chateau, "potion": potion,
     "cristal": cristal, "grimoire": grimoire,
+    "astronaute": astronaute, "princesse": princesse,
 }
