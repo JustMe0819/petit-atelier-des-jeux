@@ -1,0 +1,60 @@
+{
+  "name": "petit-atelier-des-jeux",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n serveur,site -c yellow,cyan \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:client": "vite",
+    "dev:server": "tsx watch --env-file-if-exists=.env src/server/index.ts",
+    "build": "tsc -p tsconfig.json --noEmit && vite build",
+    "vercel-build": "vite build && node scripts/construire-serveur.mjs",
+    "start": "NODE_ENV=production tsx --env-file-if-exists=.env src/server/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "catalogue": "tsx --env-file-if-exists=.env src/server/cli/catalogue.ts",
+    "commandes": "tsx --env-file-if-exists=.env src/server/cli/commandes.ts",
+    "generer": "python3 -m generation.build",
+    "icones": "python3 scripts/icones.py",
+    "demo": "node scripts/demo.mjs",
+    "test:e2e": "node tests/e2e/parcours-achat.cjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/nunito-sans": "^5.3.0",
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
+    "@libsql/client": "^0.18.0",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "material-symbols": "^0.48.2",
+    "nodemailer": "^10.2.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "stripe": "^23.0.1",
+    "tsx": "^4.23.15",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "@types/nodemailer": "^8.0.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/supertest": "^7.2.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.6.2",
+    "concurrently": "^10.0.6",
+    "esbuild": "^0.28.2",
+    "playwright": "^1.58.0",
+    "postcss": "^8.5.32",
+    "supertest": "^7.3.1",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}

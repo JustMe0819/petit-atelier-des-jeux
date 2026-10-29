@@ -1,0 +1,572 @@
+{
+  "_note": "Gabarits de petits problèmes. {a} et {b} sont tirés au hasard dans les intervalles donnés ; la réponse est calculée puis vérifiée par le programme.",
+  "dinosaures": [
+    {
+      "texte": "Pico trouve {a} fougères le matin et {b} fougères l'après-midi. Combien de fougères a-t-il trouvées en tout ?",
+      "op": "+",
+      "a": [
+        2,
+        8
+      ],
+      "b": [
+        1,
+        6
+      ],
+      "unite": "fougères",
+      "niveau": 1
+    },
+    {
+      "texte": "Dans le nid, il y a {a} œufs. {b} œufs éclosent. Combien d'œufs ne sont pas encore éclos ?",
+      "op": "-",
+      "a": [
+        5,
+        10
+      ],
+      "b": [
+        1,
+        4
+      ],
+      "unite": "œufs",
+      "niveau": 1
+    },
+    {
+      "texte": "{a} diplodocus boivent au lac. {b} autres diplodocus arrivent. Combien de diplodocus y a-t-il au lac maintenant ?",
+      "op": "+",
+      "a": [
+        3,
+        9
+      ],
+      "b": [
+        2,
+        8
+      ],
+      "unite": "diplodocus",
+      "niveau": 1
+    },
+    {
+      "texte": "Pico a {a} feuilles. Il en mange {b}. Combien de feuilles lui reste-t-il ?",
+      "op": "-",
+      "a": [
+        8,
+        15
+      ],
+      "b": [
+        2,
+        7
+      ],
+      "unite": "feuilles",
+      "niveau": 2
+    },
+    {
+      "texte": "Un stégosaure a {a} plaques sur le dos d'un côté et {b} plaques de l'autre côté. Combien de plaques a-t-il en tout ?",
+      "op": "+",
+      "a": [
+        5,
+        9
+      ],
+      "b": [
+        5,
+        9
+      ],
+      "unite": "plaques",
+      "niveau": 2
+    },
+    {
+      "texte": "Il y a {a} os dans la grotte. Un petit tyrannosaure en emporte {b}. Combien d'os reste-t-il dans la grotte ?",
+      "op": "-",
+      "a": [
+        10,
+        18
+      ],
+      "b": [
+        3,
+        8
+      ],
+      "unite": "os",
+      "niveau": 2
+    },
+    {
+      "texte": "Chaque tricératops a 3 cornes. Combien de cornes ont {a} tricératops ?",
+      "op": "x",
+      "a": [
+        2,
+        4
+      ],
+      "b": [
+        3,
+        3
+      ],
+      "unite": "cornes",
+      "niveau": 3,
+      "_note": "b vaut toujours 3 (le nombre de cornes)"
+    },
+    {
+      "texte": "Pico marche {a} pas jusqu'à la rivière, puis {b} pas jusqu'au rocher. Combien de pas a-t-il faits ?",
+      "op": "+",
+      "a": [
+        10,
+        15
+      ],
+      "b": [
+        5,
+        12
+      ],
+      "unite": "pas",
+      "niveau": 3
+    },
+    {
+      "texte": "Un ptérodactyle a {a} poissons. Il en donne {b} à ses petits. Combien de poissons lui reste-t-il ?",
+      "op": "-",
+      "a": [
+        12,
+        20
+      ],
+      "b": [
+        4,
+        9
+      ],
+      "unite": "poissons",
+      "niveau": 3
+    },
+    {
+      "texte": "Chaque nid contient 2 œufs. Combien d'œufs y a-t-il dans {a} nids ?",
+      "op": "x",
+      "a": [
+        3,
+        6
+      ],
+      "b": [
+        2,
+        2
+      ],
+      "unite": "œufs",
+      "niveau": 3
+    }
+  ],
+  "espace": [
+    {
+      "texte": "Bip voit {a} étoiles à gauche et {b} étoiles à droite. Combien d'étoiles voit-il en tout ?",
+      "op": "+",
+      "a": [
+        2,
+        8
+      ],
+      "b": [
+        1,
+        6
+      ],
+      "unite": "étoiles",
+      "niveau": 1
+    },
+    {
+      "texte": "Il y a {a} fusées sur la Lune. {b} fusées décollent. Combien de fusées restent sur la Lune ?",
+      "op": "-",
+      "a": [
+        5,
+        10
+      ],
+      "b": [
+        1,
+        4
+      ],
+      "unite": "fusées",
+      "niveau": 1
+    },
+    {
+      "texte": "{a} extraterrestres dansent sur une planète. {b} autres arrivent. Combien sont-ils maintenant ?",
+      "op": "+",
+      "a": [
+        3,
+        9
+      ],
+      "b": [
+        2,
+        8
+      ],
+      "unite": "extraterrestres",
+      "niveau": 1
+    },
+    {
+      "texte": "Bip a {a} boulons dans sa boîte. Il en utilise {b} pour réparer la fusée. Combien de boulons lui reste-t-il ?",
+      "op": "-",
+      "a": [
+        8,
+        15
+      ],
+      "b": [
+        2,
+        7
+      ],
+      "unite": "boulons",
+      "niveau": 2
+    },
+    {
+      "texte": "La fusée a {a} hublots d'un côté et {b} hublots de l'autre. Combien de hublots a-t-elle en tout ?",
+      "op": "+",
+      "a": [
+        5,
+        9
+      ],
+      "b": [
+        5,
+        9
+      ],
+      "unite": "hublots",
+      "niveau": 2
+    },
+    {
+      "texte": "Il y a {a} cailloux de lune dans le sac. Bip en donne {b} à son ami. Combien en reste-t-il ?",
+      "op": "-",
+      "a": [
+        10,
+        18
+      ],
+      "b": [
+        3,
+        8
+      ],
+      "unite": "cailloux",
+      "niveau": 2
+    },
+    {
+      "texte": "Chaque extraterrestre a 2 antennes. Combien d'antennes ont {a} extraterrestres ?",
+      "op": "x",
+      "a": [
+        3,
+        6
+      ],
+      "b": [
+        2,
+        2
+      ],
+      "unite": "antennes",
+      "niveau": 3
+    },
+    {
+      "texte": "La navette parcourt {a} étoiles le matin et {b} étoiles le soir. Combien d'étoiles a-t-elle parcourues ?",
+      "op": "+",
+      "a": [
+        10,
+        15
+      ],
+      "b": [
+        5,
+        12
+      ],
+      "unite": "étoiles",
+      "niveau": 3
+    },
+    {
+      "texte": "Bip a {a} piles. Il en met {b} dans sa lampe. Combien de piles lui reste-t-il ?",
+      "op": "-",
+      "a": [
+        12,
+        20
+      ],
+      "b": [
+        4,
+        9
+      ],
+      "unite": "piles",
+      "niveau": 3
+    },
+    {
+      "texte": "Chaque robot a 3 boutons. Combien de boutons ont {a} robots ?",
+      "op": "x",
+      "a": [
+        2,
+        4
+      ],
+      "b": [
+        3,
+        3
+      ],
+      "unite": "boutons",
+      "niveau": 3
+    }
+  ],
+  "pirates": [
+    {
+      "texte": "Coco trouve {a} pièces d'or le matin et {b} pièces l'après-midi. Combien de pièces a-t-il trouvées en tout ?",
+      "op": "+",
+      "a": [
+        2,
+        8
+      ],
+      "b": [
+        1,
+        6
+      ],
+      "unite": "pièces",
+      "niveau": 1
+    },
+    {
+      "texte": "Il y a {a} pommes dans le tonneau. Les pirates en mangent {b}. Combien de pommes reste-t-il ?",
+      "op": "-",
+      "a": [
+        5,
+        10
+      ],
+      "b": [
+        1,
+        4
+      ],
+      "unite": "pommes",
+      "niveau": 1
+    },
+    {
+      "texte": "{a} pirates sont sur le pont. {b} autres pirates arrivent. Combien de pirates y a-t-il maintenant ?",
+      "op": "+",
+      "a": [
+        3,
+        9
+      ],
+      "b": [
+        2,
+        8
+      ],
+      "unite": "pirates",
+      "niveau": 1
+    },
+    {
+      "texte": "Le capitaine a {a} cordes. Il en utilise {b} pour attacher les voiles. Combien de cordes lui reste-t-il ?",
+      "op": "-",
+      "a": [
+        8,
+        15
+      ],
+      "b": [
+        2,
+        7
+      ],
+      "unite": "cordes",
+      "niveau": 2
+    },
+    {
+      "texte": "Le bateau a {a} canons à gauche et {b} canons à droite. Combien de canons a-t-il en tout ?",
+      "op": "+",
+      "a": [
+        5,
+        9
+      ],
+      "b": [
+        5,
+        9
+      ],
+      "unite": "canons",
+      "niveau": 2
+    },
+    {
+      "texte": "Il y a {a} coquillages sur la plage. Coco en ramasse {b}. Combien de coquillages reste-t-il sur la plage ?",
+      "op": "-",
+      "a": [
+        10,
+        18
+      ],
+      "b": [
+        3,
+        8
+      ],
+      "unite": "coquillages",
+      "niveau": 2
+    },
+    {
+      "texte": "Chaque coffre contient 5 pièces d'or. Combien de pièces y a-t-il dans {a} coffres ?",
+      "op": "x",
+      "a": [
+        2,
+        4
+      ],
+      "b": [
+        5,
+        5
+      ],
+      "unite": "pièces",
+      "niveau": 3
+    },
+    {
+      "texte": "Le bateau navigue {a} jours vers l'île, puis {b} jours autour de l'île. Combien de jours a-t-il navigué ?",
+      "op": "+",
+      "a": [
+        10,
+        15
+      ],
+      "b": [
+        5,
+        12
+      ],
+      "unite": "jours",
+      "niveau": 3
+    },
+    {
+      "texte": "Les pirates ont {a} biscuits. Ils en mangent {b}. Combien de biscuits leur reste-t-il ?",
+      "op": "-",
+      "a": [
+        12,
+        20
+      ],
+      "b": [
+        4,
+        9
+      ],
+      "unite": "biscuits",
+      "niveau": 3
+    },
+    {
+      "texte": "Chaque crabe a 2 pinces. Combien de pinces ont {a} crabes ?",
+      "op": "x",
+      "a": [
+        3,
+        6
+      ],
+      "b": [
+        2,
+        2
+      ],
+      "unite": "pinces",
+      "niveau": 3
+    }
+  ],
+  "magie": [
+    {
+      "texte": "Flamme cueille {a} fleurs magiques le matin et {b} fleurs le soir. Combien de fleurs a-t-il cueillies ?",
+      "op": "+",
+      "a": [
+        2,
+        8
+      ],
+      "b": [
+        1,
+        6
+      ],
+      "unite": "fleurs",
+      "niveau": 1
+    },
+    {
+      "texte": "Il y a {a} potions sur l'étagère. La magicienne en boit {b}. Combien de potions reste-t-il ?",
+      "op": "-",
+      "a": [
+        5,
+        10
+      ],
+      "b": [
+        1,
+        4
+      ],
+      "unite": "potions",
+      "niveau": 1
+    },
+    {
+      "texte": "{a} fées volent au-dessus du lac. {b} autres fées arrivent. Combien de fées y a-t-il maintenant ?",
+      "op": "+",
+      "a": [
+        3,
+        9
+      ],
+      "b": [
+        2,
+        8
+      ],
+      "unite": "fées",
+      "niveau": 1
+    },
+    {
+      "texte": "Le sorcier a {a} chandelles. Il en allume {b}. Combien de chandelles ne sont pas allumées ?",
+      "op": "-",
+      "a": [
+        8,
+        15
+      ],
+      "b": [
+        2,
+        7
+      ],
+      "unite": "chandelles",
+      "niveau": 2
+    },
+    {
+      "texte": "Le grimoire a {a} pages vertes et {b} pages violettes. Combien de pages colorées a-t-il ?",
+      "op": "+",
+      "a": [
+        5,
+        9
+      ],
+      "b": [
+        5,
+        9
+      ],
+      "unite": "pages",
+      "niveau": 2
+    },
+    {
+      "texte": "Il y a {a} cristaux dans la grotte. Flamme en emporte {b}. Combien de cristaux reste-t-il ?",
+      "op": "-",
+      "a": [
+        10,
+        18
+      ],
+      "b": [
+        3,
+        8
+      ],
+      "unite": "cristaux",
+      "niveau": 2
+    },
+    {
+      "texte": "Chaque château a 4 tours. Combien de tours ont {a} châteaux ?",
+      "op": "x",
+      "a": [
+        2,
+        4
+      ],
+      "b": [
+        4,
+        4
+      ],
+      "unite": "tours",
+      "niveau": 3
+    },
+    {
+      "texte": "Flamme vole {a} minutes jusqu'au lac, puis {b} minutes jusqu'à la tour. Combien de minutes a-t-il volé ?",
+      "op": "+",
+      "a": [
+        10,
+        15
+      ],
+      "b": [
+        5,
+        12
+      ],
+      "unite": "minutes",
+      "niveau": 3
+    },
+    {
+      "texte": "La magicienne a {a} étoiles magiques. Elle en accroche {b} dans le ciel. Combien d'étoiles lui reste-t-il ?",
+      "op": "-",
+      "a": [
+        12,
+        20
+      ],
+      "b": [
+        4,
+        9
+      ],
+      "unite": "étoiles",
+      "niveau": 3
+    },
+    {
+      "texte": "Chaque dragon a 2 ailes. Combien d'ailes ont {a} dragons ?",
+      "op": "x",
+      "a": [
+        3,
+        6
+      ],
+      "b": [
+        2,
+        2
+      ],
+      "unite": "ailes",
+      "niveau": 3
+    }
+  ]
+}

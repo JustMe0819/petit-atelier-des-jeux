@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build-serveur/
+.vercel/
+.env
+.env.*
+!.env.example
+# Données locales (base de développement, e-mails de test, démonstration) : jamais sur GitHub.
+data/
+# Les PDF payants de storage/ SONT versionnés : le dépôt GitHub doit rester PRIVÉ.
+generation/output/
+__pycache__/
+.pytest_cache/
+*.pyc

@@ -1,0 +1,17 @@
+{
+  "_note": "Missions des labyrinthes : animal au départ, objectif à l'arrivée (noms des pictogrammes de pdf_builder/pictos.py).",
+  "missions": [
+    {"depart": "herisson", "arrivee": "maison", "texte": "Aide le hérisson à rejoindre sa maison."},
+    {"depart": "lapin", "arrivee": "carotte", "texte": "Aide le lapin à trouver sa carotte."},
+    {"depart": "souris", "arrivee": "fromage", "texte": "Aide la souris à trouver le fromage."},
+    {"depart": "chouette", "arrivee": "nid", "texte": "Aide la chouette à retrouver son nid."},
+    {"depart": "grenouille", "arrivee": "mare", "texte": "Aide la grenouille à rejoindre la mare."},
+    {"depart": "ours", "arrivee": "miel", "texte": "Aide l'ours à trouver le pot de miel."},
+    {"depart": "tortue", "arrivee": "feuille", "texte": "Aide la tortue à trouver une bonne feuille à croquer."},
+    {"depart": "renard", "arrivee": "terrier", "texte": "Aide le renard à rentrer dans son terrier."},
+    {"depart": "chat", "arrivee": "pelote", "texte": "Aide le chat à attraper la pelote de laine."},
+    {"depart": "poussin", "arrivee": "maison", "texte": "Aide le poussin à retrouver la ferme."},
+    {"depart": "escargot", "arrivee": "champignon", "texte": "Aide l'escargot à rejoindre le champignon."},
+    {"depart": "oiseau", "arrivee": "arbre", "texte": "Aide l'oiseau à rejoindre son arbre."}
+  ]
+}

@@ -1,0 +1,722 @@
+{
+  "version": 1,
+  "devise": "EUR",
+  "_note": "Source unique du catalogue. Le site et les générateurs Python lisent ce fichier. Prix en centimes. Statuts possibles : brouillon | en_verification | publie. Seul un humain passe un produit à 'publie' (npm run catalogue -- publier <id>).",
+  "produits": [
+    {
+      "id": "labyrinthes-petits-explorateurs",
+      "slug": "labyrinthes-petits-explorateurs",
+      "titre": "Les labyrinthes des petits explorateurs",
+      "sous_titre": "Pack de labyrinthes progressifs",
+      "description": "Des labyrinthes de plus en plus grands pour aider les petits animaux de la forêt à retrouver leur chemin. Chaque page propose une petite mission et un départ et une arrivée bien visibles. La difficulté augmente doucement au fil des pages.",
+      "prix_centimes": 390,
+      "categorie": "labyrinthes",
+      "themes": [
+        "animaux"
+      ],
+      "age": "6-8 ans",
+      "difficultes": [
+        "debutant",
+        "intermediaire",
+        "defi"
+      ],
+      "objectif": {
+        "texte": "30 labyrinthes progressifs",
+        "nb_jeux": 30,
+        "nb_pages": null
+      },
+      "points_cles": [
+        "Labyrinthes progressifs sur le thème des animaux",
+        "Corrigés dans un fichier séparé",
+        "PDF A4 imprimable en noir et blanc"
+      ],
+      "corriges": {
+        "inclus": true,
+        "separes": true,
+        "texte": "Corrigés fournis dans un fichier PDF séparé."
+      },
+      "couverture": "/images/couvertures/labyrinthes-petits-explorateurs.webp",
+      "apercus": [
+        {
+          "src": "/apercus/labyrinthes-petits-explorateurs/apercu-01.png",
+          "legende": "Labyrinthe n°3 (niveau débutant)"
+        },
+        {
+          "src": "/apercus/labyrinthes-petits-explorateurs/apercu-02.png",
+          "legende": "Labyrinthe n°14 (niveau intermédiaire)"
+        },
+        {
+          "src": "/apercus/labyrinthes-petits-explorateurs/apercu-03.png",
+          "legende": "Labyrinthe n°26 (niveau défi)"
+        },
+        {
+          "src": "/apercus/labyrinthes-petits-explorateurs/apercu-04.png",
+          "legende": "Extrait des corrigés (fichier séparé)"
+        }
+      ],
+      "fichiers": {
+        "pdf": "produits/labyrinthes-petits-explorateurs/labyrinthes-petits-explorateurs.pdf",
+        "corriges": "produits/labyrinthes-petits-explorateurs/labyrinthes-petits-explorateurs-corriges.pdf",
+        "encre_eco": null
+      },
+      "contenu": {
+        "nb_pages": 31,
+        "nb_jeux": 30,
+        "genere_le": "2026-10-28T15:30:01+01:00"
+      },
+      "qa": {
+        "rapport": "generation/output/labyrinthes-petits-explorateurs/rapport_qualite.json",
+        "valide_automatiquement": true,
+        "relu_par": "Thylia Brouillard",
+        "relu_le": "2026-10-29T14:50:48.987Z"
+      },
+      "statut": "publie",
+      "date_ajout": "2026-10-28",
+      "composants": []
+    },
+    {
+      "id": "defis-de-la-logique",
+      "slug": "defis-de-la-logique",
+      "titre": "Les défis de la logique",
+      "sous_titre": "Suites, associations et petits défis",
+      "description": "Des activités courtes pour apprendre à observer et à raisonner : suites de formes, suites de nombres adaptées à l'âge, intrus, éléments manquants et associations. Chaque activité a une seule bonne réponse, vérifiée automatiquement.",
+      "prix_centimes": 490,
+      "categorie": "logique",
+      "themes": [
+        "animaux"
+      ],
+      "age": "6-8 ans",
+      "difficultes": [
+        "debutant",
+        "intermediaire",
+        "defi"
+      ],
+      "objectif": {
+        "texte": "30 activités de logique",
+        "nb_jeux": 30,
+        "nb_pages": null
+      },
+      "points_cles": [
+        "Suites logiques, associations et éléments manquants",
+        "Difficulté progressive",
+        "Corrigés inclus en fin de fichier"
+      ],
+      "corriges": {
+        "inclus": true,
+        "separes": false,
+        "texte": "Corrigés regroupés à la fin du PDF."
+      },
+      "couverture": "/images/couvertures/defis-de-la-logique.webp",
+      "apercus": [
+        {
+          "src": "/apercus/defis-de-la-logique/apercu-01.png",
+          "legende": "Activités 1 et 2 : suite de formes, suite de nombres"
+        },
+        {
+          "src": "/apercus/defis-de-la-logique/apercu-02.png",
+          "legende": "Activités 13 et 14 : l'intrus, la case manquante"
+        },
+        {
+          "src": "/apercus/defis-de-la-logique/apercu-03.png",
+          "legende": "Activités 25 et 26 : associations, suite de nombres"
+        },
+        {
+          "src": "/apercus/defis-de-la-logique/apercu-04.png",
+          "legende": "Extrait des corrigés"
+        }
+      ],
+      "fichiers": {
+        "pdf": "produits/defis-de-la-logique/defis-de-la-logique.pdf",
+        "corriges": null,
+        "encre_eco": null
+      },
+      "contenu": {
+        "nb_pages": 20,
+        "nb_jeux": 30,
+        "genere_le": "2026-10-28T15:30:05+01:00"
+      },
+      "qa": {
+        "rapport": "generation/output/defis-de-la-logique/rapport_qualite.json",
+        "valide_automatiquement": true,
+        "relu_par": "Thylia Brouillard",
+        "relu_le": "2026-10-29T14:50:37.583Z"
+      },
+      "statut": "publie",
+      "date_ajout": "2026-10-28",
+      "composants": []
+    },
+    {
+      "id": "mes-premiers-nonogrammes",
+      "slug": "mes-premiers-nonogrammes",
+      "titre": "Mes premiers nonogrammes",
+      "sous_titre": "Grilles à colorier pour révéler un dessin",
+      "description": "Les nonogrammes sont des grilles où les nombres indiquent quelles cases colorier. Case après case, un dessin d'animal apparaît. On commence par des grilles de 5 × 5 avant de passer aux grilles de 10 × 10. Chaque grille a une solution unique, vérifiée par un programme.",
+      "prix_centimes": 490,
+      "categorie": "nonogrammes",
+      "themes": [
+        "animaux"
+      ],
+      "age": "6-8 ans",
+      "difficultes": [
+        "debutant",
+        "intermediaire",
+        "defi"
+      ],
+      "objectif": {
+        "texte": "40 grilles (5 × 5 et 10 × 10)",
+        "nb_jeux": 40,
+        "nb_pages": null
+      },
+      "points_cles": [
+        "Grilles 5 × 5 puis 10 × 10",
+        "Solution unique vérifiée pour chaque grille",
+        "Page d'explication pas à pas"
+      ],
+      "corriges": {
+        "inclus": true,
+        "separes": false,
+        "texte": "Solutions illustrées à la fin du PDF."
+      },
+      "couverture": "/images/couvertures/mes-premiers-nonogrammes.webp",
+      "apercus": [
+        {
+          "src": "/apercus/mes-premiers-nonogrammes/apercu-01.png",
+          "legende": "Page « Comment jouer ? » pas à pas"
+        },
+        {
+          "src": "/apercus/mes-premiers-nonogrammes/apercu-02.png",
+          "legende": "Nonogrammes n°1 et n°2 (5 × 5)"
+        },
+        {
+          "src": "/apercus/mes-premiers-nonogrammes/apercu-03.png",
+          "legende": "Nonogramme n°24 (10 × 10)"
+        },
+        {
+          "src": "/apercus/mes-premiers-nonogrammes/apercu-04.png",
+          "legende": "Nonogramme n°38 (10 × 10)"
+        },
+        {
+          "src": "/apercus/mes-premiers-nonogrammes/apercu-05.png",
+          "legende": "Extrait des solutions illustrées"
+        }
+      ],
+      "fichiers": {
+        "pdf": "produits/mes-premiers-nonogrammes/mes-premiers-nonogrammes.pdf",
+        "corriges": null,
+        "encre_eco": null
+      },
+      "contenu": {
+        "nb_pages": 37,
+        "nb_jeux": 40,
+        "genere_le": "2026-10-28T15:30:08+01:00"
+      },
+      "qa": {
+        "rapport": "generation/output/mes-premiers-nonogrammes/rapport_qualite.json",
+        "valide_automatiquement": true,
+        "relu_par": "Thylia Brouillard",
+        "relu_le": "2026-10-29T14:50:38.323Z"
+      },
+      "statut": "publie",
+      "date_ajout": "2026-10-28",
+      "composants": []
+    },
+    {
+      "id": "grand-cahier-petits-explorateurs",
+      "slug": "grand-cahier-petits-explorateurs",
+      "titre": "Les petits explorateurs — Mon grand cahier d'activités",
+      "sous_titre": "Un cahier complet et varié",
+      "description": "Un grand cahier qui mélange les plaisirs : labyrinthes, défis de logique, jeux d'observation, nonogrammes et coloriages codés. Les activités sont rangées de la plus facile à la plus difficile, avec une page de consignes au début.",
+      "prix_centimes": 790,
+      "categorie": "cahiers",
+      "themes": [
+        "animaux"
+      ],
+      "age": "6-8 ans",
+      "difficultes": [
+        "debutant",
+        "intermediaire",
+        "defi"
+      ],
+      "objectif": {
+        "texte": "35 à 40 pages d'activités",
+        "nb_jeux": null,
+        "nb_pages": 38
+      },
+      "points_cles": [
+        "Labyrinthes, logique, observation et coloriages codés",
+        "Progression du plus facile au plus difficile",
+        "Corrigés à la fin du cahier quand c'est utile",
+        "Version économie d'encre incluse"
+      ],
+      "corriges": {
+        "inclus": true,
+        "separes": false,
+        "texte": "Corrigés à la fin du cahier pour les activités qui en ont besoin."
+      },
+      "couverture": "/images/couvertures/grand-cahier-petits-explorateurs.webp",
+      "apercus": [
+        {
+          "src": "/apercus/grand-cahier-petits-explorateurs/apercu-01.png",
+          "legende": "Labyrinthe n°1 (niveau débutant)"
+        },
+        {
+          "src": "/apercus/grand-cahier-petits-explorateurs/apercu-02.png",
+          "legende": "Les 5 différences"
+        },
+        {
+          "src": "/apercus/grand-cahier-petits-explorateurs/apercu-03.png",
+          "legende": "Activités 5 et 6 : la case manquante, suite de formes"
+        },
+        {
+          "src": "/apercus/grand-cahier-petits-explorateurs/apercu-04.png",
+          "legende": "Nonogramme n°5 (10 × 10)"
+        },
+        {
+          "src": "/apercus/grand-cahier-petits-explorateurs/apercu-05.png",
+          "legende": "Extrait des corrigés"
+        }
+      ],
+      "fichiers": {
+        "pdf": "produits/grand-cahier-petits-explorateurs/grand-cahier-petits-explorateurs.pdf",
+        "corriges": null,
+        "encre_eco": "produits/grand-cahier-petits-explorateurs/grand-cahier-petits-explorateurs-encre-eco.pdf"
+      },
+      "contenu": {
+        "nb_pages": 40,
+        "nb_jeux": 37,
+        "genere_le": "2026-10-28T15:30:20+01:00"
+      },
+      "qa": {
+        "rapport": "generation/output/grand-cahier-petits-explorateurs/rapport_qualite.json",
+        "valide_automatiquement": true,
+        "relu_par": "Thylia Brouillard",
+        "relu_le": "2026-10-29T14:50:49.696Z"
+      },
+      "statut": "publie",
+      "date_ajout": "2026-10-28",
+      "composants": []
+    },
+    {
+      "id": "mission-dinosaures",
+      "slug": "mission-dinosaures",
+      "titre": "Mission dinosaures",
+      "sous_titre": "Un cahier-aventure chez les dinosaures",
+      "description": "Une petite aventure en plusieurs étapes : pour avancer dans la vallée des dinosaures, l'enfant résout des labyrinthes, des énigmes, des défis de logique et des jeux d'observation. Chaque étape débloque la suite de l'histoire.",
+      "prix_centimes": 990,
+      "categorie": "cahiers",
+      "themes": [
+        "dinosaures"
+      ],
+      "age": "6-8 ans",
+      "difficultes": [
+        "debutant",
+        "intermediaire",
+        "defi"
+      ],
+      "objectif": {
+        "texte": "40 à 50 pages d'aventure",
+        "nb_jeux": null,
+        "nb_pages": 45
+      },
+      "points_cles": [
+        "Une histoire qui avance d'activité en activité",
+        "Labyrinthes, logique, observation et énigmes",
+        "Corrigés inclus",
+        "Version économie d'encre incluse"
+      ],
+      "corriges": {
+        "inclus": true,
+        "separes": false,
+        "texte": "Corrigés à la fin du cahier."
+      },
+      "couverture": "/images/couvertures/mission-dinosaures.webp",
+      "apercus": [
+        {
+          "src": "/apercus/mission-dinosaures/apercu-01.png",
+          "legende": "Le début de l'histoire"
+        },
+        {
+          "src": "/apercus/mission-dinosaures/apercu-02.png",
+          "legende": "Message secret n°1"
+        },
+        {
+          "src": "/apercus/mission-dinosaures/apercu-03.png",
+          "legende": "Labyrinthe n°3 (niveau intermédiaire)"
+        },
+        {
+          "src": "/apercus/mission-dinosaures/apercu-04.png",
+          "legende": "Message secret n°2"
+        },
+        {
+          "src": "/apercus/mission-dinosaures/apercu-05.png",
+          "legende": "Extrait des corrigés"
+        }
+      ],
+      "fichiers": {
+        "pdf": "produits/mission-dinosaures/mission-dinosaures.pdf",
+        "corriges": null,
+        "encre_eco": "produits/mission-dinosaures/mission-dinosaures-encre-eco.pdf"
+      },
+      "contenu": {
+        "nb_pages": 46,
+        "nb_jeux": 46,
+        "genere_le": "2026-10-28T15:30:33+01:00"
+      },
+      "qa": {
+        "rapport": "generation/output/mission-dinosaures/rapport_qualite.json",
+        "valide_automatiquement": true,
+        "relu_par": "Thylia Brouillard",
+        "relu_le": "2026-10-29T14:50:50.371Z"
+      },
+      "statut": "publie",
+      "date_ajout": "2026-10-28",
+      "composants": []
+    },
+    {
+      "id": "mission-espace",
+      "slug": "mission-espace",
+      "titre": "Mission espace",
+      "sous_titre": "Un cahier-aventure dans les étoiles",
+      "description": "Une petite aventure en plusieurs étapes : pour voyager de planète en planète, l'enfant résout des labyrinthes, des énigmes, des défis de logique et des jeux d'observation. Chaque étape débloque la suite de l'histoire.",
+      "prix_centimes": 990,
+      "categorie": "cahiers",
+      "themes": [
+        "espace"
+      ],
+      "age": "6-8 ans",
+      "difficultes": [
+        "debutant",
+        "intermediaire",
+        "defi"
+      ],
+      "objectif": {
+        "texte": "40 à 50 pages d'aventure",
+        "nb_jeux": null,
+        "nb_pages": 45
+      },
+      "points_cles": [
+        "Une histoire qui avance d'activité en activité",
+        "Labyrinthes, logique, observation et énigmes",
+        "Corrigés inclus",
+        "Version économie d'encre incluse"
+      ],
+      "corriges": {
+        "inclus": true,
+        "separes": false,
+        "texte": "Corrigés à la fin du cahier."
+      },
+      "couverture": "/images/couvertures/mission-espace.webp",
+      "apercus": [
+        {
+          "src": "/apercus/mission-espace/apercu-01.png",
+          "legende": "Le début de l'histoire"
+        },
+        {
+          "src": "/apercus/mission-espace/apercu-02.png",
+          "legende": "Message secret n°1"
+        },
+        {
+          "src": "/apercus/mission-espace/apercu-03.png",
+          "legende": "Labyrinthe n°3 (niveau intermédiaire)"
+        },
+        {
+          "src": "/apercus/mission-espace/apercu-04.png",
+          "legende": "Message secret n°2"
+        },
+        {
+          "src": "/apercus/mission-espace/apercu-05.png",
+          "legende": "Extrait des corrigés"
+        }
+      ],
+      "fichiers": {
+        "pdf": "produits/mission-espace/mission-espace.pdf",
+        "corriges": null,
+        "encre_eco": "produits/mission-espace/mission-espace-encre-eco.pdf"
+      },
+      "contenu": {
+        "nb_pages": 46,
+        "nb_jeux": 46,
+        "genere_le": "2026-10-29T15:37:51+01:00"
+      },
+      "qa": {
+        "rapport": "generation/output/mission-espace/rapport_qualite.json",
+        "valide_automatiquement": true,
+        "relu_par": "Thylia Brouillard",
+        "relu_le": "2026-10-29T14:50:40.411Z"
+      },
+      "statut": "publie",
+      "date_ajout": "2026-10-29",
+      "composants": []
+    },
+    {
+      "id": "mission-pirates",
+      "slug": "mission-pirates",
+      "titre": "Mission pirates",
+      "sous_titre": "Un cahier-aventure sur la piste du trésor",
+      "description": "Une petite aventure en plusieurs étapes : pour retrouver le trésor caché de l'île, l'enfant résout des labyrinthes, des énigmes, des défis de logique et des jeux d'observation. Chaque étape débloque la suite de l'histoire.",
+      "prix_centimes": 990,
+      "categorie": "cahiers",
+      "themes": [
+        "pirates"
+      ],
+      "age": "6-8 ans",
+      "difficultes": [
+        "debutant",
+        "intermediaire",
+        "defi"
+      ],
+      "objectif": {
+        "texte": "40 à 50 pages d'aventure",
+        "nb_jeux": null,
+        "nb_pages": 45
+      },
+      "points_cles": [
+        "Une chasse au trésor qui avance d'activité en activité",
+        "Labyrinthes, logique, observation et énigmes",
+        "Corrigés inclus",
+        "Version économie d'encre incluse"
+      ],
+      "corriges": {
+        "inclus": true,
+        "separes": false,
+        "texte": "Corrigés à la fin du cahier."
+      },
+      "couverture": "/images/couvertures/mission-pirates.webp",
+      "apercus": [
+        {
+          "src": "/apercus/mission-pirates/apercu-01.png",
+          "legende": "Le début de l'histoire"
+        },
+        {
+          "src": "/apercus/mission-pirates/apercu-02.png",
+          "legende": "Message secret n°1"
+        },
+        {
+          "src": "/apercus/mission-pirates/apercu-03.png",
+          "legende": "Labyrinthe n°3 (niveau intermédiaire)"
+        },
+        {
+          "src": "/apercus/mission-pirates/apercu-04.png",
+          "legende": "Message secret n°2"
+        },
+        {
+          "src": "/apercus/mission-pirates/apercu-05.png",
+          "legende": "Extrait des corrigés"
+        }
+      ],
+      "fichiers": {
+        "pdf": "produits/mission-pirates/mission-pirates.pdf",
+        "corriges": null,
+        "encre_eco": "produits/mission-pirates/mission-pirates-encre-eco.pdf"
+      },
+      "contenu": {
+        "nb_pages": 46,
+        "nb_jeux": 46,
+        "genere_le": "2026-10-29T15:38:05+01:00"
+      },
+      "qa": {
+        "rapport": "generation/output/mission-pirates/rapport_qualite.json",
+        "valide_automatiquement": true,
+        "relu_par": "Thylia Brouillard",
+        "relu_le": "2026-10-29T14:50:41.076Z"
+      },
+      "statut": "publie",
+      "date_ajout": "2026-10-29",
+      "composants": []
+    },
+    {
+      "id": "mission-magie",
+      "slug": "mission-magie",
+      "titre": "Mission magie",
+      "sous_titre": "Un cahier-aventure chez les créatures magiques",
+      "description": "Une petite aventure en plusieurs étapes : pour traverser la forêt enchantée avec un petit dragon gentil, l'enfant résout des labyrinthes, des énigmes, des défis de logique et des jeux d'observation. Chaque étape débloque la suite de l'histoire.",
+      "prix_centimes": 990,
+      "categorie": "cahiers",
+      "themes": [
+        "magie"
+      ],
+      "age": "6-8 ans",
+      "difficultes": [
+        "debutant",
+        "intermediaire",
+        "defi"
+      ],
+      "objectif": {
+        "texte": "40 à 50 pages d'aventure",
+        "nb_jeux": null,
+        "nb_pages": 45
+      },
+      "points_cles": [
+        "Une histoire qui avance d'activité en activité",
+        "Labyrinthes, logique, observation et énigmes",
+        "Corrigés inclus",
+        "Version économie d'encre incluse"
+      ],
+      "corriges": {
+        "inclus": true,
+        "separes": false,
+        "texte": "Corrigés à la fin du cahier."
+      },
+      "couverture": "/images/couvertures/mission-magie.webp",
+      "apercus": [
+        {
+          "src": "/apercus/mission-magie/apercu-01.png",
+          "legende": "Le début de l'histoire"
+        },
+        {
+          "src": "/apercus/mission-magie/apercu-02.png",
+          "legende": "Message secret n°1"
+        },
+        {
+          "src": "/apercus/mission-magie/apercu-03.png",
+          "legende": "Labyrinthe n°3 (niveau intermédiaire)"
+        },
+        {
+          "src": "/apercus/mission-magie/apercu-04.png",
+          "legende": "Message secret n°2"
+        },
+        {
+          "src": "/apercus/mission-magie/apercu-05.png",
+          "legende": "Extrait des corrigés"
+        }
+      ],
+      "fichiers": {
+        "pdf": "produits/mission-magie/mission-magie.pdf",
+        "corriges": null,
+        "encre_eco": "produits/mission-magie/mission-magie-encre-eco.pdf"
+      },
+      "contenu": {
+        "nb_pages": 46,
+        "nb_jeux": 46,
+        "genere_le": "2026-10-29T15:38:57+01:00"
+      },
+      "qa": {
+        "rapport": "generation/output/mission-magie/rapport_qualite.json",
+        "valide_automatiquement": true,
+        "relu_par": "Thylia Brouillard",
+        "relu_le": "2026-10-29T14:50:41.809Z"
+      },
+      "statut": "publie",
+      "date_ajout": "2026-10-29",
+      "composants": []
+    },
+    {
+      "id": "grand-coffret-explorateurs",
+      "slug": "grand-coffret-explorateurs",
+      "titre": "Le grand coffret des explorateurs",
+      "sous_titre": "Offre groupée numérique",
+      "description": "Le coffret réunit les trois packs de grilles (labyrinthes, défis de logique, nonogrammes) et le grand cahier d'activités en un seul achat. Vous recevez l'accès à tous les PDF inclus, avec leurs corrigés.",
+      "prix_centimes": 1190,
+      "categorie": "packs",
+      "themes": [
+        "animaux"
+      ],
+      "age": "6-8 ans",
+      "difficultes": [
+        "debutant",
+        "intermediaire",
+        "defi"
+      ],
+      "objectif": {
+        "texte": "4 produits réunis",
+        "nb_jeux": null,
+        "nb_pages": null
+      },
+      "points_cles": [
+        "Les 3 packs de grilles et le grand cahier en un achat",
+        "Corrigés inclus",
+        "Un seul paiement, tous les fichiers"
+      ],
+      "corriges": {
+        "inclus": true,
+        "separes": false,
+        "texte": "Les corrigés de chaque produit inclus sont fournis."
+      },
+      "couverture": "/images/couvertures/grand-coffret-explorateurs.webp",
+      "apercus": [],
+      "fichiers": {
+        "pdf": null,
+        "corriges": null,
+        "encre_eco": null
+      },
+      "contenu": {
+        "nb_pages": null,
+        "nb_jeux": null,
+        "genere_le": null
+      },
+      "qa": {
+        "rapport": null,
+        "valide_automatiquement": false,
+        "relu_par": "Thylia Brouillard",
+        "relu_le": "2026-10-29T14:50:51.051Z"
+      },
+      "statut": "publie",
+      "date_ajout": "2026-10-28",
+      "composants": [
+        "labyrinthes-petits-explorateurs",
+        "defis-de-la-logique",
+        "mes-premiers-nonogrammes",
+        "grand-cahier-petits-explorateurs"
+      ]
+    }
+  ],
+  "gratuits": [
+    {
+      "id": "labyrinthe-du-renard",
+      "titre": "Le labyrinthe du renard",
+      "description": "Un labyrinthe de niveau intermédiaire pour aider le petit renard à rentrer dans son terrier. La solution est sur la deuxième page.",
+      "fichier": "/gratuit/labyrinthe-du-renard.pdf",
+      "apercu": "/gratuit/labyrinthe-du-renard.png",
+      "nb_pages": 2,
+      "competences": [
+        "Repérage dans l'espace",
+        "Motricité fine",
+        "Anticipation"
+      ],
+      "age": "6-8 ans"
+    },
+    {
+      "id": "nonogramme-decouverte",
+      "titre": "Mon premier nonogramme",
+      "description": "Un mini-guide pas à pas pour comprendre les nonogrammes, puis une grille 5 × 5 à résoudre seul. Solution incluse.",
+      "fichier": "/gratuit/nonogramme-decouverte.pdf",
+      "apercu": "/gratuit/nonogramme-decouverte.png",
+      "nb_pages": 3,
+      "competences": [
+        "Logique",
+        "Lecture de consignes",
+        "Concentration"
+      ],
+      "age": "6-8 ans"
+    },
+    {
+      "id": "fiche-logique",
+      "titre": "Ma fiche de logique",
+      "description": "Trois petits défis : une suite de formes, une suite de nombres et un intrus. Chaque activité a une seule bonne réponse. Corrigé inclus.",
+      "fichier": "/gratuit/fiche-logique.pdf",
+      "apercu": "/gratuit/fiche-logique.png",
+      "nb_pages": 2,
+      "competences": [
+        "Raisonnement logique",
+        "Observation",
+        "Nombres jusqu'à 20"
+      ],
+      "age": "6-8 ans"
+    },
+    {
+      "id": "mini-cahier-decouverte",
+      "titre": "Mon mini-cahier découverte",
+      "description": "Un petit cahier pour découvrir nos jeux : un labyrinthe, des défis de logique, un nonogramme et un jeu des différences, avec les corrigés.",
+      "fichier": "/gratuit/mini-cahier-decouverte.pdf",
+      "apercu": "/gratuit/mini-cahier-decouverte.png",
+      "nb_pages": 6,
+      "competences": [
+        "Repérage dans l'espace",
+        "Logique",
+        "Observation",
+        "Concentration"
+      ],
+      "age": "6-8 ans"
+    }
+  ]
+}

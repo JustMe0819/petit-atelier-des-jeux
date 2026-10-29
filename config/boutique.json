@@ -1,0 +1,31 @@
+{
+  "_note": "Informations légales et de contact. Remplacez chaque valeur commençant par 'À COMPLÉTER' avant le passage en paiement réel. Le site affiche ces champs en surbrillance tant qu'ils ne sont pas remplis.",
+  "nom": "Petit Atelier des Jeux",
+  "slogan": "Des jeux à imprimer pour grandir en s'amusant !",
+  "url_site": "https://petit-atelier-des-jeux.vercel.app",
+  "email_contact": "contact.petitatelierdesjeux@gmail.com",
+  "editeur": {
+    "raison_sociale": "À COMPLÉTER : nom et prénom (entrepreneur individuel) — nom commercial : Petit Atelier des Jeux",
+    "forme_juridique": "Entrepreneur individuel (micro-entreprise)",
+    "adresse": "À COMPLÉTER : adresse postale (votre adresse personnelle, celle déclarée lors de la création de la micro-entreprise)",
+    "siret": "À COMPLÉTER : numéro SIRET (reçu après la déclaration sur le guichet unique de l'INPI)",
+    "rcs_ou_rne": "À COMPLÉTER : immatriculation au Registre national des entreprises (RNE)",
+    "tva_intracom": "Non applicable (franchise en base de TVA) — À CONFIRMER",
+    "directeur_publication": "À COMPLÉTER : votre nom et prénom",
+    "telephone": "À COMPLÉTER : numéro secondaire (numéro virtuel), pas votre numéro personnel"
+  },
+  "tva": {
+    "mention": "TVA non applicable, art. 293 B du CGI"
+  },
+  "hebergeur": {
+    "nom": "Vercel Inc.",
+    "adresse": "440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis",
+    "contact": "https://vercel.com — privacy@vercel.com"
+  },
+  "mediateur": {
+    "nom": "À COMPLÉTER : médiateur de la consommation choisi",
+    "site": "À COMPLÉTER : site web du médiateur"
+  },
+  "illustrations": "Les illustrations de couverture ont été créées par l'éditrice du site à l'aide d'outils d'intelligence artificielle (Claude, ChatGPT). Elles sont utilisées dans le respect des conditions d'utilisation de ces outils.",
+  "licence_usage": "Usage privé et non commercial dans le cadre du foyer de l'acheteur. Impressions illimitées pour ce foyer. Revente, partage public et diffusion des fichiers interdits."
+}

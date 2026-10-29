@@ -1,0 +1,8 @@
+# Génération des PDF (Python 3.11+ ; testé avec Python 3.13)
+reportlab>=4.0
+pypdf>=4.0
+pypdfium2>=4.0
+pdfplumber>=0.10
+Pillow>=10.0
+numpy>=1.26
+pytest>=8.0
