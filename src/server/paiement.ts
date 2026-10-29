@@ -72,8 +72,9 @@ export class FournisseurStripe implements FournisseurPaiement {
         allow_promotion_codes: this.codesPromo || undefined,
         success_url: p.urlSucces,
         cancel_url: p.urlAnnulation,
-        // La session expire au bout de 30 minutes (minimum autorisé par Stripe).
-        expires_at: Math.floor(Date.now() / 1000) + 30 * 60,
+        // La session expire au bout d'une heure. Stripe exige au moins 30 minutes après sa création :
+        // viser exactement 30 minutes fait refuser la session (délai réseau, horloges décalées).
+        expires_at: Math.floor(Date.now() / 1000) + 60 * 60,
       },
       { idempotencyKey: `session-${p.commandeId}` },
     );
