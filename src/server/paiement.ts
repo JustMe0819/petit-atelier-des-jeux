@@ -54,7 +54,8 @@ export class FournisseurStripe implements FournisseurPaiement {
 
   async creerSession(p: ParametresSession) {
     const session = await this.stripe.checkout.sessions.create(
-      {
+      // `managed_payments` n'est pas encore décrit dans les types de la bibliothèque Stripe.
+      ({
         mode: 'payment',
         locale: 'fr',
         customer_email: p.email,
@@ -70,12 +71,15 @@ export class FournisseurStripe implements FournisseurPaiement {
           },
         })),
         allow_promotion_codes: this.codesPromo || undefined,
+        // La boutique vend en son nom propre (micro-entreprise en franchise de TVA) : on désactive
+        // « Managed Payments » (Stripe vendeur officiel), activé par défaut sur certains comptes.
+        managed_payments: { enabled: false },
         success_url: p.urlSucces,
         cancel_url: p.urlAnnulation,
         // La session expire au bout d'une heure. Stripe exige au moins 30 minutes après sa création :
         // viser exactement 30 minutes fait refuser la session (délai réseau, horloges décalées).
         expires_at: Math.floor(Date.now() / 1000) + 60 * 60,
-      },
+      } as Stripe.Checkout.SessionCreateParams),
       { idempotencyKey: `session-${p.commandeId}` },
     );
     if (!session.url) throw new Error('Stripe n’a pas renvoyé d’URL de paiement.');

@@ -10,8 +10,27 @@ export type Ligne = Record<string, any>;
 export type Instruction = { sql: string; args?: unknown[] };
 
 export class Db {
-  /** `pret` : promesse des migrations, attendue automatiquement avant chaque requête. */
-  constructor(readonly client: Client, private pret: Promise<void> = Promise.resolve()) {}
+  /**
+   * `pret` : promesse des migrations, attendue automatiquement avant chaque requête.
+   * `relancer` : si la base était injoignable au démarrage (coupure réseau passagère),
+   * les migrations sont retentées à la requête suivante au lieu de bloquer l'instance.
+   */
+  constructor(
+    readonly client: Client,
+    private pret: Promise<void> = Promise.resolve(),
+    private relancer?: () => Promise<void>,
+  ) {}
+
+  private async attendre(): Promise<void> {
+    try {
+      await this.pret;
+    } catch (e) {
+      if (!this.relancer) throw e;
+      this.pret = this.relancer();
+      this.pret.catch((err) => console.error('[base de données] nouvel essai impossible :', err));
+      await this.pret;
+    }
+  }
 
   private static ligne(colonnes: string[], row: ArrayLike<unknown>): Ligne {
     const o: Ligne = {};
@@ -20,7 +39,7 @@ export class Db {
   }
 
   async all<T = Ligne>(sql: string, ...args: unknown[]): Promise<T[]> {
-    await this.pret;
+    await this.attendre();
     const rs = await this.client.execute({ sql, args: args as InArgs });
     return rs.rows.map((r) => Db.ligne(rs.columns, r) as T);
   }
@@ -31,20 +50,20 @@ export class Db {
 
   /** Exécute une écriture ; renvoie le nombre de lignes modifiées. */
   async run(sql: string, ...args: unknown[]): Promise<{ changes: number }> {
-    await this.pret;
+    await this.attendre();
     const rs = await this.client.execute({ sql, args: args as InArgs });
     return { changes: rs.rowsAffected };
   }
 
   /** Plusieurs écritures en une seule transaction (tout ou rien). */
   async transaction(instructions: Instruction[]): Promise<void> {
-    await this.pret;
+    await this.attendre();
     await this.client.batch(instructions.map((i) => ({ sql: i.sql, args: (i.args ?? []) as InArgs }) as InStatement), 'write');
   }
 
   /** Attend la fin des migrations (utile au démarrage pour signaler une base injoignable). */
   prete(): Promise<void> {
-    return this.pret;
+    return this.attendre();
   }
 
   close() {
@@ -116,9 +135,10 @@ export interface OptionsDb {
 
 export function ouvrirDb(o: OptionsDb): Db {
   const client = createClient({ url: o.url, authToken: o.authToken });
-  const pret = migrer(new Db(client));
+  const lancer = () => migrer(new Db(client));
+  const pret = lancer();
   pret.catch((e) => console.error('[base de données] migration impossible :', e));
-  return new Db(client, pret);
+  return new Db(client, pret, lancer);
 }
 
 async function migrer(db: Db): Promise<void> {
