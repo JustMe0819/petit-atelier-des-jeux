@@ -47,7 +47,7 @@ export function BoutonAjouter({ produit, taille = 'normal', className = '' }: { 
     <button type="button" onClick={() => (dedans ? navigate('/panier') : ajouter(produit.id))}
       className={`btn ${taille === 'grand' ? 'px-5 py-3.5' : 'h-10 px-3.5'} shadow-sm ${dedans ? 'bg-secondary-container text-on-secondary-container' : 'bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim'} ${className}`}>
       <Icone nom={dedans ? 'check' : 'add_shopping_cart'} className="text-[18px]" />
-      <span>{dedans ? 'Dans le panier' : taille === 'grand' ? `Ajouter au panier — ${formatPrix(produit.prixCentimes)}` : 'Ajouter'}</span>
+      <span>{dedans ? (taille === 'grand' ? 'Dans le panier' : 'Au panier') : taille === 'grand' ? `Ajouter au panier — ${formatPrix(produit.prixCentimes)}` : 'Ajouter'}</span>
     </button>
   );
 }
@@ -73,12 +73,12 @@ export function CarteProduit({ produit }: { produit: ProduitPublic }) {
           <Link to={`/produit/${produit.slug}`} className="hover:text-primary">{produit.titre}</Link>
         </h3>
         <p className="mb-space-sm line-clamp-2 font-texte text-body-sm text-on-surface-variant">{produit.description}</p>
-        <div className="mt-auto flex items-center justify-between gap-2 pt-2">
+        <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-2">
           <div>
             <span className="block font-texte text-caption text-on-surface-variant">{produit.disponible ? 'Format PDF' : 'Prix prévu'}</span>
             <span className="font-titre text-headline-md font-extrabold text-on-surface">{formatPrix(produit.prixCentimes)}</span>
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className="ml-auto flex items-center gap-1.5">
             <Link to={`/produit/${produit.slug}`} title="Voir la fiche et les aperçus" aria-label={`Voir la fiche de ${produit.titre}`}
               className="flex h-10 w-10 items-center justify-center rounded-xl bg-surface-container-low text-on-surface transition-colors hover:bg-surface-container">
               <Icone nom="visibility" className="text-[20px]" />
